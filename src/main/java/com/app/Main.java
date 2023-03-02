@@ -1,10 +1,11 @@
-package com.wisesaying;
+package com.app;
 
 import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        System.out.println("== 명언 앱 ==");
+        MyScanner.init();
         new App().run();
+        MyScanner.close();
     }
 }

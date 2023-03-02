@@ -1,4 +1,4 @@
-package com.wisesaying;
+package com.app.wisesaying.entity;
 
 public class WiseSaying {
     public static Integer count = 0;

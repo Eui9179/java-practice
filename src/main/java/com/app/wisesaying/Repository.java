@@ -1,11 +1,18 @@
-package com.wisesaying;
+package com.app.wisesaying;
+
+import com.app.wisesaying.entity.WiseSaying;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
 
 public class Repository {
-    final static Map<Integer, WiseSaying> repository = new HashMap<>();
+    public final static Map<Integer, WiseSaying> repository = new HashMap<>();
+
+    public static ArrayList<WiseSaying> toArrayList() {
+        return new ArrayList<>(repository.keySet().stream().map(repository::get).toList());
+    }
+
     public Repository() {
         init();
     }
@@ -26,7 +33,6 @@ public class Repository {
         } catch (IOException e) {
             System.out.println(e);
         }
-
     }
 
     public Integer register(String content, String author) {
