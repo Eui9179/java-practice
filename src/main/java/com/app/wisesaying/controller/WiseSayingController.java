@@ -5,7 +5,6 @@ import com.app.wisesaying.entity.WiseSaying;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 import java.util.Scanner;
 
 public class WiseSayingController {

@@ -2,14 +2,9 @@ package com.app;
 
 import com.app.build.JsonBuilder;
 import com.app.files.FileSave;
-import com.app.wisesaying.Repository;
 import com.app.wisesaying.controller.WiseSayingController;
-import com.app.wisesaying.entity.WiseSaying;
-import org.json.JSONArray;
-import org.json.JSONObject;
 
-import java.io.*;
-import java.util.*;
+import java.io.IOException;
 
 public class App {
     WiseSayingController controller = new WiseSayingController();
